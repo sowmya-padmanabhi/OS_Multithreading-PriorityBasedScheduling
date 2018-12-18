@@ -1,0 +1,3 @@
+D:/MS_CourseWork/MS_Sem3/CIS657_OS/SowmyaOSPA1/NachosPA1/cmake-build-debug/CMakeFiles/NachosPA1.dir
+D:/MS_CourseWork/MS_Sem3/CIS657_OS/SowmyaOSPA1/NachosPA1/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/MS_CourseWork/MS_Sem3/CIS657_OS/SowmyaOSPA1/NachosPA1/cmake-build-debug/CMakeFiles/rebuild_cache.dir

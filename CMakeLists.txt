@@ -1,0 +1,204 @@
+cmake_minimum_required(VERSION 3.12)
+project(NachosPA1)
+
+set(CMAKE_CXX_STANDARD 14)
+
+include_directories(.)
+include_directories(.idea)
+include_directories(cmake-build-debug)
+include_directories(nachos)
+include_directories(nachos/c++example)
+include_directories(nachos/code)
+include_directories(nachos/code/build.cygwin)
+include_directories(nachos/code/build.linux)
+include_directories(nachos/code/build.macosx)
+include_directories(nachos/code/filesys)
+include_directories(nachos/code/lib)
+include_directories(nachos/code/machine)
+include_directories(nachos/code/network)
+include_directories(nachos/code/test)
+include_directories(nachos/code/threads)
+include_directories(nachos/code/userprog)
+include_directories(nachos/coff2noff)
+
+add_executable(NachosPA1
+        .idea/codeStyles/Project.xml
+        .idea/misc.xml
+        .idea/modules.xml
+        .idea/NachosPA1.iml
+        .idea/workspace.xml
+        cmake-build-debug/cmake_install.cmake
+        cmake-build-debug/CMakeCache.txt
+        cmake-build-debug/Makefile
+        cmake-build-debug/NachosPA1.cbp
+        nachos/c++example/c++.ps
+        nachos/c++example/c++.tex
+        nachos/c++example/copyright.h
+        nachos/c++example/inheritstack.cc
+        nachos/c++example/inheritstack.h
+        nachos/c++example/list.cc
+        nachos/c++example/list.h
+        nachos/c++example/Makefile
+        nachos/c++example/stack.cc
+        nachos/c++example/stack.h
+        nachos/c++example/templatestack.cc
+        nachos/c++example/templatestack.h
+        nachos/code/build.cygwin/Makefile
+        nachos/code/build.cygwin/Makefile.dep
+        nachos/code/build.linux/addrspace.o
+        nachos/code/build.linux/alarm.o
+        nachos/code/build.linux/bitmap.o
+        nachos/code/build.linux/console.o
+        nachos/code/build.linux/debug.o
+        nachos/code/build.linux/directory.o
+        nachos/code/build.linux/disk.o
+        nachos/code/build.linux/DISK_0
+        nachos/code/build.linux/exception.o
+        nachos/code/build.linux/filehdr.o
+        nachos/code/build.linux/filesys.o
+        nachos/code/build.linux/interrupt.o
+        nachos/code/build.linux/kernel.o
+        nachos/code/build.linux/libtest.o
+        nachos/code/build.linux/machine.o
+        nachos/code/build.linux/main.o
+        nachos/code/build.linux/Makefile
+        nachos/code/build.linux/Makefile.dep
+        nachos/code/build.linux/mipssim.o
+        nachos/code/build.linux/nachos
+        nachos/code/build.linux/network.o
+        nachos/code/build.linux/openfile.o
+        nachos/code/build.linux/pbitmap.o
+        nachos/code/build.linux/post.o
+        nachos/code/build.linux/process.o
+        nachos/code/build.linux/processScheduler.o
+        nachos/code/build.linux/scheduler.o
+        nachos/code/build.linux/stats.o
+        nachos/code/build.linux/switch.o
+        nachos/code/build.linux/synch.o
+        nachos/code/build.linux/synchconsole.o
+        nachos/code/build.linux/synchdisk.o
+        nachos/code/build.linux/sysdep.o
+        nachos/code/build.linux/thread.o
+        nachos/code/build.linux/threadtest.o
+        nachos/code/build.linux/timer.o
+        nachos/code/build.linux/translate.o
+        nachos/code/build.macosx/Makefile
+        nachos/code/build.macosx/Makefile.dep
+        nachos/code/filesys/directory.cc
+        nachos/code/filesys/directory.h
+        nachos/code/filesys/filehdr.cc
+        nachos/code/filesys/filehdr.h
+        nachos/code/filesys/filesys.cc
+        nachos/code/filesys/filesys.h
+        nachos/code/filesys/openfile.cc
+        nachos/code/filesys/openfile.h
+        nachos/code/filesys/pbitmap.cc
+        nachos/code/filesys/pbitmap.h
+        nachos/code/filesys/synchdisk.cc
+        nachos/code/filesys/synchdisk.h
+        nachos/code/lib/bitmap.cc
+        nachos/code/lib/bitmap.h
+        nachos/code/lib/copyright.h
+        nachos/code/lib/debug.cc
+        nachos/code/lib/debug.h
+        nachos/code/lib/hash.cc
+        nachos/code/lib/hash.h
+        nachos/code/lib/libtest.cc
+        nachos/code/lib/libtest.h
+        nachos/code/lib/list.cc
+        nachos/code/lib/list.h
+        nachos/code/lib/sysdep.cc
+        nachos/code/lib/sysdep.h
+        nachos/code/lib/utility.h
+        nachos/code/machine/callback.h
+        nachos/code/machine/console.cc
+        nachos/code/machine/console.h
+        nachos/code/machine/disk.cc
+        nachos/code/machine/disk.h
+        nachos/code/machine/interrupt.cc
+        nachos/code/machine/interrupt.h
+        nachos/code/machine/machine.cc
+        nachos/code/machine/machine.h
+        nachos/code/machine/mipssim.cc
+        nachos/code/machine/mipssim.h
+        nachos/code/machine/network.cc
+        nachos/code/machine/network.h
+        nachos/code/machine/stats.cc
+        nachos/code/machine/stats.h
+        nachos/code/machine/timer.cc
+        nachos/code/machine/timer.h
+        nachos/code/machine/translate.cc
+        nachos/code/machine/translate.h
+        nachos/code/network/post.cc
+        nachos/code/network/post.h
+        nachos/code/test/add
+        nachos/code/test/add.c
+        nachos/code/test/add.coff
+        nachos/code/test/add.o
+        nachos/code/test/DISK_0
+        nachos/code/test/halt
+        nachos/code/test/halt.c
+        nachos/code/test/halt.coff
+        nachos/code/test/halt.o
+        nachos/code/test/Makefile
+        nachos/code/test/Makefile.dep
+        nachos/code/test/matmult
+        nachos/code/test/matmult.c
+        nachos/code/test/matmult.coff
+        nachos/code/test/matmult.o
+        nachos/code/test/script
+        nachos/code/test/segments
+        nachos/code/test/segments.c
+        nachos/code/test/segments.coff
+        nachos/code/test/segments.o
+        nachos/code/test/shell
+        nachos/code/test/shell.c
+        nachos/code/test/shell.coff
+        nachos/code/test/shell.o
+        nachos/code/test/sort
+        nachos/code/test/sort.c
+        nachos/code/test/sort.coff
+        nachos/code/test/sort.o
+        nachos/code/test/start.o
+        nachos/code/test/start.S
+        nachos/code/threads/alarm.cc
+        nachos/code/threads/alarm.h
+        nachos/code/threads/kernel.cc
+        nachos/code/threads/kernel.h
+        nachos/code/threads/main.cc
+        nachos/code/threads/main.h
+        nachos/code/threads/process.cc
+        nachos/code/threads/process.h
+        nachos/code/threads/processScheduler.cc
+        nachos/code/threads/processScheduler.h
+        nachos/code/threads/scheduler.cc
+        nachos/code/threads/scheduler.h
+        nachos/code/threads/switch.h
+        nachos/code/threads/switch.S
+        nachos/code/threads/synch.cc
+        nachos/code/threads/synch.h
+        nachos/code/threads/synchlist.cc
+        nachos/code/threads/synchlist.h
+        nachos/code/threads/thread.cc
+        nachos/code/threads/thread.h
+        nachos/code/threads/threadtest.cc
+        nachos/code/userprog/addrspace.cc
+        nachos/code/userprog/addrspace.h
+        nachos/code/userprog/errno.h
+        nachos/code/userprog/exception.cc
+        nachos/code/userprog/ksyscall.h
+        nachos/code/userprog/noff.h
+        nachos/code/userprog/synchconsole.cc
+        nachos/code/userprog/synchconsole.h
+        nachos/code/userprog/syscall.h
+        nachos/code/README
+        nachos/coff2noff/coff.h
+        nachos/coff2noff/coff2noff.c
+        nachos/coff2noff/coff2noff.o
+        nachos/coff2noff/coff2noff.x86Linux
+        nachos/coff2noff/copyright.h
+        nachos/coff2noff/Makefile
+        nachos/coff2noff/Makefile.dep
+        nachos/coff2noff/noff.h
+        nachos/COPYRIGHT
+        CMakeLists.txt)
